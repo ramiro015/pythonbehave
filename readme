@@ -1,0 +1,31 @@
+EXPLANATION:
+The script was developed on Python, Selenium and Behave(BDD). I didn't implement Page Object pattern because It's a simple project, adding more complexity to it would be superfluos and possibily counterproductive. 
+
+STEPS TO EXCECUTE THE TEST CASE:
+
+1-Update your system software: 
+sudo apt-get update && sudo apt-get -y upgrade
+
+2-Install Pip:
+sudo apt-get install python-pip
+
+3-Install or upgrade Selenium:
+pip install -U selenium
+
+4-Install behave with pip:
+pip install behave
+
+5-Config geckodriver:
+wget https://github.com/mozilla/geckodriver/releases/download/v0.18.0/geckodriver-v0.18.0-linux64.tar.gz
+tar -xvzf geckodriver-v0.18.0-linux64.tar.gz
+chmod +x geckodriver
+sudo cp geckodriver /usr/local/bin/
+
+6-Clone the following repository: https://github.com/ramiro015/pythonbehave.git
+
+7-Go to features folder
+
+8-Open a terminal
+
+8-Execute the test case:
+behave google.feature
